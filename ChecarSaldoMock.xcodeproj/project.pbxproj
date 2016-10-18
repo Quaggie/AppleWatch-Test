@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0EABF2B1DB5352C005A9564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EABF2A1DB5352C005A9564 /* AppDelegate.swift */; };
+		E0EABF301DB5352C005A9564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EABF2E1DB5352C005A9564 /* Main.storyboard */; };
+		E0EABF321DB5352C005A9564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EABF311DB5352C005A9564 /* Assets.xcassets */; };
+		E0EABF351DB5352C005A9564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EABF331DB5352C005A9564 /* LaunchScreen.storyboard */; };
+		E0EABF401DB5352C005A9564 /* ChecarSaldoMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EABF3F1DB5352C005A9564 /* ChecarSaldoMockTests.swift */; };
+		E0EABF501DB5355A005A9564 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EABF4E1DB5355A005A9564 /* Interface.storyboard */; };
+		E0EABF521DB5355A005A9564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EABF511DB5355A005A9564 /* Assets.xcassets */; };
+		E0EABF591DB5355A005A9564 /* ChecarSaldoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E0EABF581DB5355A005A9564 /* ChecarSaldoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E0EABF5E1DB5355A005A9564 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EABF5D1DB5355A005A9564 /* InterfaceController.swift */; };
+		E0EABF601DB5355A005A9564 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EABF5F1DB5355A005A9564 /* ExtensionDelegate.swift */; };
+		E0EABF621DB5355A005A9564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EABF611DB5355A005A9564 /* Assets.xcassets */; };
+		E0EABF661DB5355A005A9564 /* ChecarSaldoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E0EABF4C1DB5355A005A9564 /* ChecarSaldoWatch.app */; };
+		E0EABF701DB53C0A005A9564 /* MainViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EABF6F1DB53C0A005A9564 /* MainViewcontroller.swift */; };
+		E0EABF751DB540A7005A9564 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EABF741DB540A7005A9564 /* LoginViewController.swift */; };
+		E0EABF781DB5412B005A9564 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EABF771DB5412B005A9564 /* UIViewController+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0EABF3C1DB5352C005A9564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0EABF1F1DB5352B005A9564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EABF261DB5352B005A9564;
+			remoteInfo = ChecarSaldoMock;
+		};
+		E0EABF5A1DB5355A005A9564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0EABF1F1DB5352B005A9564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EABF571DB5355A005A9564;
+			remoteInfo = "ChecarSaldoWatch Extension";
+		};
+		E0EABF641DB5355A005A9564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0EABF1F1DB5352B005A9564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EABF4B1DB5355A005A9564;
+			remoteInfo = ChecarSaldoWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0EABF6A1DB5355A005A9564 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0EABF591DB5355A005A9564 /* ChecarSaldoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF6E1DB5355A005A9564 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E0EABF661DB5355A005A9564 /* ChecarSaldoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E0EABF271DB5352C005A9564 /* ChecarSaldoMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChecarSaldoMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EABF2A1DB5352C005A9564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0EABF2F1DB5352C005A9564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0EABF311DB5352C005A9564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0EABF341DB5352C005A9564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0EABF361DB5352C005A9564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EABF3B1DB5352C005A9564 /* ChecarSaldoMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecarSaldoMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EABF3F1DB5352C005A9564 /* ChecarSaldoMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecarSaldoMockTests.swift; sourceTree = "<group>"; };
+		E0EABF411DB5352C005A9564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EABF4C1DB5355A005A9564 /* ChecarSaldoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChecarSaldoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EABF4F1DB5355A005A9564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E0EABF511DB5355A005A9564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0EABF531DB5355A005A9564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EABF581DB5355A005A9564 /* ChecarSaldoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ChecarSaldoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EABF5D1DB5355A005A9564 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E0EABF5F1DB5355A005A9564 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E0EABF611DB5355A005A9564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0EABF631DB5355A005A9564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EABF6F1DB53C0A005A9564 /* MainViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewcontroller.swift; sourceTree = "<group>"; };
+		E0EABF741DB540A7005A9564 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E0EABF771DB5412B005A9564 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0EABF241DB5352B005A9564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF381DB5352C005A9564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF551DB5355A005A9564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0EABF1E1DB5352B005A9564 = {
+			isa = PBXGroup;
+			children = (
+				E0EABF291DB5352C005A9564 /* ChecarSaldoMock */,
+				E0EABF3E1DB5352C005A9564 /* ChecarSaldoMockTests */,
+				E0EABF4D1DB5355A005A9564 /* ChecarSaldoWatch */,
+				E0EABF5C1DB5355A005A9564 /* ChecarSaldoWatch Extension */,
+				E0EABF281DB5352C005A9564 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0EABF281DB5352C005A9564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF271DB5352C005A9564 /* ChecarSaldoMock.app */,
+				E0EABF3B1DB5352C005A9564 /* ChecarSaldoMockTests.xctest */,
+				E0EABF4C1DB5355A005A9564 /* ChecarSaldoWatch.app */,
+				E0EABF581DB5355A005A9564 /* ChecarSaldoWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0EABF291DB5352C005A9564 /* ChecarSaldoMock */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF761DB54111005A9564 /* Extensions */,
+				E0EABF731DB53C29005A9564 /* Views */,
+				E0EABF721DB53C19005A9564 /* Controllers */,
+				E0EABF711DB53C11005A9564 /* Assets */,
+			);
+			path = ChecarSaldoMock;
+			sourceTree = "<group>";
+		};
+		E0EABF3E1DB5352C005A9564 /* ChecarSaldoMockTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF3F1DB5352C005A9564 /* ChecarSaldoMockTests.swift */,
+				E0EABF411DB5352C005A9564 /* Info.plist */,
+			);
+			path = ChecarSaldoMockTests;
+			sourceTree = "<group>";
+		};
+		E0EABF4D1DB5355A005A9564 /* ChecarSaldoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF4E1DB5355A005A9564 /* Interface.storyboard */,
+				E0EABF511DB5355A005A9564 /* Assets.xcassets */,
+				E0EABF531DB5355A005A9564 /* Info.plist */,
+			);
+			path = ChecarSaldoWatch;
+			sourceTree = "<group>";
+		};
+		E0EABF5C1DB5355A005A9564 /* ChecarSaldoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF5D1DB5355A005A9564 /* InterfaceController.swift */,
+				E0EABF5F1DB5355A005A9564 /* ExtensionDelegate.swift */,
+				E0EABF611DB5355A005A9564 /* Assets.xcassets */,
+				E0EABF631DB5355A005A9564 /* Info.plist */,
+			);
+			path = "ChecarSaldoWatch Extension";
+			sourceTree = "<group>";
+		};
+		E0EABF711DB53C11005A9564 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF311DB5352C005A9564 /* Assets.xcassets */,
+				E0EABF361DB5352C005A9564 /* Info.plist */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E0EABF721DB53C19005A9564 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF2A1DB5352C005A9564 /* AppDelegate.swift */,
+				E0EABF6F1DB53C0A005A9564 /* MainViewcontroller.swift */,
+				E0EABF741DB540A7005A9564 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E0EABF731DB53C29005A9564 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF2E1DB5352C005A9564 /* Main.storyboard */,
+				E0EABF331DB5352C005A9564 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E0EABF761DB54111005A9564 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0EABF771DB5412B005A9564 /* UIViewController+Ext.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0EABF261DB5352B005A9564 /* ChecarSaldoMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EABF441DB5352C005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoMock" */;
+			buildPhases = (
+				E0EABF231DB5352B005A9564 /* Sources */,
+				E0EABF241DB5352B005A9564 /* Frameworks */,
+				E0EABF251DB5352B005A9564 /* Resources */,
+				E0EABF6E1DB5355A005A9564 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0EABF651DB5355A005A9564 /* PBXTargetDependency */,
+			);
+			name = ChecarSaldoMock;
+			productName = ChecarSaldoMock;
+			productReference = E0EABF271DB5352C005A9564 /* ChecarSaldoMock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0EABF3A1DB5352C005A9564 /* ChecarSaldoMockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EABF471DB5352C005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoMockTests" */;
+			buildPhases = (
+				E0EABF371DB5352C005A9564 /* Sources */,
+				E0EABF381DB5352C005A9564 /* Frameworks */,
+				E0EABF391DB5352C005A9564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0EABF3D1DB5352C005A9564 /* PBXTargetDependency */,
+			);
+			name = ChecarSaldoMockTests;
+			productName = ChecarSaldoMockTests;
+			productReference = E0EABF3B1DB5352C005A9564 /* ChecarSaldoMockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0EABF4B1DB5355A005A9564 /* ChecarSaldoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EABF6B1DB5355A005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoWatch" */;
+			buildPhases = (
+				E0EABF4A1DB5355A005A9564 /* Resources */,
+				E0EABF6A1DB5355A005A9564 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0EABF5B1DB5355A005A9564 /* PBXTargetDependency */,
+			);
+			name = ChecarSaldoWatch;
+			productName = ChecarSaldoWatch;
+			productReference = E0EABF4C1DB5355A005A9564 /* ChecarSaldoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E0EABF571DB5355A005A9564 /* ChecarSaldoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EABF671DB5355A005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoWatch Extension" */;
+			buildPhases = (
+				E0EABF541DB5355A005A9564 /* Sources */,
+				E0EABF551DB5355A005A9564 /* Frameworks */,
+				E0EABF561DB5355A005A9564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChecarSaldoWatch Extension";
+			productName = "ChecarSaldoWatch Extension";
+			productReference = E0EABF581DB5355A005A9564 /* ChecarSaldoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0EABF1F1DB5352B005A9564 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = putfiredev;
+				TargetAttributes = {
+					E0EABF261DB5352B005A9564 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2GARH944G4;
+						ProvisioningStyle = Automatic;
+					};
+					E0EABF3A1DB5352C005A9564 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2GARH944G4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0EABF261DB5352B005A9564;
+					};
+					E0EABF4B1DB5355A005A9564 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2GARH944G4;
+						ProvisioningStyle = Automatic;
+					};
+					E0EABF571DB5355A005A9564 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2GARH944G4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E0EABF221DB5352B005A9564 /* Build configuration list for PBXProject "ChecarSaldoMock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0EABF1E1DB5352B005A9564;
+			productRefGroup = E0EABF281DB5352C005A9564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0EABF261DB5352B005A9564 /* ChecarSaldoMock */,
+				E0EABF3A1DB5352C005A9564 /* ChecarSaldoMockTests */,
+				E0EABF4B1DB5355A005A9564 /* ChecarSaldoWatch */,
+				E0EABF571DB5355A005A9564 /* ChecarSaldoWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0EABF251DB5352B005A9564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EABF351DB5352C005A9564 /* LaunchScreen.storyboard in Resources */,
+				E0EABF321DB5352C005A9564 /* Assets.xcassets in Resources */,
+				E0EABF301DB5352C005A9564 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF391DB5352C005A9564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF4A1DB5355A005A9564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EABF521DB5355A005A9564 /* Assets.xcassets in Resources */,
+				E0EABF501DB5355A005A9564 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF561DB5355A005A9564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EABF621DB5355A005A9564 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0EABF231DB5352B005A9564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EABF751DB540A7005A9564 /* LoginViewController.swift in Sources */,
+				E0EABF701DB53C0A005A9564 /* MainViewcontroller.swift in Sources */,
+				E0EABF781DB5412B005A9564 /* UIViewController+Ext.swift in Sources */,
+				E0EABF2B1DB5352C005A9564 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF371DB5352C005A9564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EABF401DB5352C005A9564 /* ChecarSaldoMockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EABF541DB5355A005A9564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EABF601DB5355A005A9564 /* ExtensionDelegate.swift in Sources */,
+				E0EABF5E1DB5355A005A9564 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0EABF3D1DB5352C005A9564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0EABF261DB5352B005A9564 /* ChecarSaldoMock */;
+			targetProxy = E0EABF3C1DB5352C005A9564 /* PBXContainerItemProxy */;
+		};
+		E0EABF5B1DB5355A005A9564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0EABF571DB5355A005A9564 /* ChecarSaldoWatch Extension */;
+			targetProxy = E0EABF5A1DB5355A005A9564 /* PBXContainerItemProxy */;
+		};
+		E0EABF651DB5355A005A9564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0EABF4B1DB5355A005A9564 /* ChecarSaldoWatch */;
+			targetProxy = E0EABF641DB5355A005A9564 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0EABF2E1DB5352C005A9564 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0EABF2F1DB5352C005A9564 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0EABF331DB5352C005A9564 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0EABF341DB5352C005A9564 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E0EABF4E1DB5355A005A9564 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0EABF4F1DB5355A005A9564 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0EABF421DB5352C005A9564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0EABF431DB5352C005A9564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0EABF451DB5352C005A9564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				INFOPLIST_FILE = ChecarSaldoMock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0EABF461DB5352C005A9564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				INFOPLIST_FILE = ChecarSaldoMock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E0EABF481DB5352C005A9564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				INFOPLIST_FILE = ChecarSaldoMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChecarSaldoMock.app/ChecarSaldoMock";
+			};
+			name = Debug;
+		};
+		E0EABF491DB5352C005A9564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				INFOPLIST_FILE = ChecarSaldoMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChecarSaldoMock.app/ChecarSaldoMock";
+			};
+			name = Release;
+		};
+		E0EABF681DB5355A005A9564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				INFOPLIST_FILE = "ChecarSaldoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMock.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		E0EABF691DB5355A005A9564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				INFOPLIST_FILE = "ChecarSaldoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMock.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		E0EABF6C1DB5355A005A9564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				IBSC_MODULE = ChecarSaldoWatch_Extension;
+				INFOPLIST_FILE = ChecarSaldoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMock.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		E0EABF6D1DB5355A005A9564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GARH944G4;
+				IBSC_MODULE = ChecarSaldoWatch_Extension;
+				INFOPLIST_FILE = ChecarSaldoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.putfiredev.ChecarSaldoMock.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0EABF221DB5352B005A9564 /* Build configuration list for PBXProject "ChecarSaldoMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EABF421DB5352C005A9564 /* Debug */,
+				E0EABF431DB5352C005A9564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0EABF441DB5352C005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EABF451DB5352C005A9564 /* Debug */,
+				E0EABF461DB5352C005A9564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0EABF471DB5352C005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoMockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EABF481DB5352C005A9564 /* Debug */,
+				E0EABF491DB5352C005A9564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0EABF671DB5355A005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EABF681DB5355A005A9564 /* Debug */,
+				E0EABF691DB5355A005A9564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0EABF6B1DB5355A005A9564 /* Build configuration list for PBXNativeTarget "ChecarSaldoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EABF6C1DB5355A005A9564 /* Debug */,
+				E0EABF6D1DB5355A005A9564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0EABF1F1DB5352B005A9564 /* Project object */;
+}

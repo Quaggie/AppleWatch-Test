@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ChecarSaldoWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.28000000000000003" alignment="left" layout="vertical" id="19N-Hs-4CI">
+                            <items>
+                                <label width="1" height="0.40000000000000002" alignment="left" text="Limite disponível" textAlignment="left" minimumScaleFactor="0.90000000000000002" id="8DM-Dc-Iqq">
+                                    <color key="textColor" red="0.35686274509999999" green="0.63921568630000003" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label width="1" height="0.59999999999999998" alignment="left" text="R$ 9,00" textAlignment="left" id="ziG-py-Fdb">
+                                    <color key="textColor" red="0.89844698229999997" green="0.1518428718" blue="0.80691589770000005" alpha="0.93537176720000004" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="27"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" height="0.71999999999999997" alignment="left" title="Atualizar" id="ANV-Wa-Gce">
+                            <connections>
+                                <action selector="refresh" destination="AgC-eL-Hgc" id="KSM-EF-cr3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="saldo" destination="ziG-py-Fdb" id="ZMx-rm-j0I"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="9yk-FJ-psg">
+            <objects>
+                <controller id="ybf-eD-dCK"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="83"/>
+        </scene>
+    </scenes>
+</document>
